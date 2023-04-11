@@ -30,9 +30,9 @@ Starting with 2020.3, IntelliJ IDEA comes with the new project wizard that can a
 
 >  When creating a project, select JDK 11 or later. To use the native distribution packaging, select JDK 15 or later.
 
-<img alt="Create new project 1" src="wizard1.png" height="500" />
+<img alt="Create new project 1" src="readme_images/wizard1.png" height="500" />
 
-<img alt="Create new project 2" src="wizard2.png" height="500" />
+<img alt="Create new project 2" src="readme_images/wizard2.png" height="500" />
 
 ### Update the plugin
 
@@ -157,20 +157,20 @@ JetBrains provides a simple way of building such projects using a special Gradle
 
 You can run and debug the application by clicking **Run** in the gutter near the  `main()` function declaration:
 
-<img alt="Application running" src="app-run.png" height="500" />
+<img alt="Application running" src="readme_images/app-run.png" height="500" />
 
 ### Using Gradle tasks
 
 1. In IntelliJ IDEA, open `build.gradle.kts`. When the necessary dependencies from the Maven repositories are downloaded, your project is ready.
 2. In the [Gradle tool window](https://www.jetbrains.com/help/idea/jetgradle-tool-window.html), select `sample/Tasks/compose desktop/run`:
 
-   <img alt="New project" src="open.png" height="500" />
+   <img alt="New project" src="readme_images/open.png" height="500" />
 
    The first run may take some time. Once it's completed, you'll see the following output:
 
 3. Click the button several times and see that the application reacts and updates the UI:
 
-   <img alt="Application running" src="app.gif" height="500" />
+   <img alt="Application running" src="readme_images/app.gif" height="500" />
 
 You can also run Gradle tasks in the terminal:
 
