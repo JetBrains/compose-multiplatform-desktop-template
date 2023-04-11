@@ -3,7 +3,7 @@
 # [Compose Multiplatform](https://github.com/JetBrains/compose-multiplatform) desktop application
 
 > **Note**
-> We would appreciate your feedback on it in the public Slack channel [#compose-ios](https://kotlinlang.slack.com/archives/C0346LWVBJ4/p1678888063176359).
+> We would appreciate your feedback in the public Slack channel [#compose-ios](https://kotlinlang.slack.com/archives/C0346LWVBJ4/p1678888063176359).
 > If you face any issues, please report them on [GitHub](https://github.com/JetBrains/compose-multiplatform/issues).
 
 Compose for Desktop can produce applications for macOS, Linux, and Windows platforms.
@@ -28,7 +28,8 @@ Install the following tools:
 
 Starting with 2020.3, IntelliJ IDEA comes with the new project wizard that can automatically create a Compose application.
 
->  When creating a project, select JDK 11 or later. To use the native distribution packaging, select JDK 15 or later.
+> **Note**
+> When creating a project, select JDK 11 or later. To use the native distribution packaging, select JDK 15 or later.
 
 <img alt="Create new project 1" src="readme_images/wizard1.png" height="500" />
 
@@ -166,7 +167,7 @@ You can run and debug the application by clicking **Run** in the gutter near the
 
    <img alt="New project" src="readme_images/open.png" height="500" />
 
-   The first run may take some time. Once it's completed, you'll see the following output:
+   The first run may take some time.
 
 3. Click the button several times and see that the application reacts and updates the UI:
 
