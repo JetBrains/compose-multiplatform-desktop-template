@@ -3,7 +3,6 @@
 # [Compose Multiplatform](https://github.com/JetBrains/compose-multiplatform) desktop application
 
 > **Note**
-> We would appreciate your feedback in the public Slack channel [#compose-ios](https://kotlinlang.slack.com/archives/C0346LWVBJ4/p1678888063176359).
 > If you face any issues, please report them on [GitHub](https://github.com/JetBrains/compose-multiplatform/issues).
 
 Compose for Desktop can produce applications for macOS, Linux, and Windows platforms.
@@ -44,8 +43,8 @@ Before you start, ensure that you use the latest version of the Compose Multipla
 
     ```kotlin
     plugins {
-       kotlin("jvm") version "1.8.10"
-       id("org.jetbrains.compose") version "1.3.1"
+       kotlin("jvm") version "1.8.20"
+       id("org.jetbrains.compose") version "1.4.0"
     }
     ```
    
@@ -82,8 +81,8 @@ JetBrains provides a simple way of building such projects using a special Gradle
 
     ``` kotlin
     plugins {
-       kotlin("jvm") version "1.8.10"
-       id("org.jetbrains.compose") version "1.3.1"
+       kotlin("jvm") version "1.8.20"
+       id("org.jetbrains.compose") version "1.4.0"
     }
     
     
@@ -184,5 +183,5 @@ We encourage you to explore Compose Multiplatform further and try out more proje
 
 * [Learn about other cases where you can use the Compose Multiplatform UI framework](https://github.com/JetBrains/compose-multiplatform#readme)
 * [Create an application targeting iOS and Android with Compose Multiplatform](https://github.com/JetBrains/compose-multiplatform-ios-android-template#readme)
-* [Complete more Compose Multiplatform tutorials](https://github.com/JetBrains/compose-multiplatform#tutorials)
-* [Explore some more advanced Compose Multiplatform example projects](https://github.com/JetBrains/compose-multiplatform#examples)
+* [Complete more Compose Multiplatform tutorials](https://github.com/JetBrains/compose-multiplatform/tutorials/README.md)
+* [Explore some more advanced Compose Multiplatform example projects](https://github.com/JetBrains/compose-multiplatform/examples/README.md)
