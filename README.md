@@ -41,8 +41,10 @@ Before you start, ensure that you’re using the latest version of the Compose M
 1. Check the latest release version in the [Compose Multiplatform GitHub repository](https://github.com/JetBrains/compose-multiplatform/releases) or on the [Kotlin](https://kotlinlang.org/) website.
 2. Open the `build.gradle.kts` file for your project and update the version:
 
-  ```kotlin
-  plugins {
+    ```kotlin
+    plugins {
+       kotlin("jvm") version "1.8.20"
+       id("org.jetbrains.compose") version "1.4.0"
     }
    ```
 
@@ -59,30 +61,95 @@ JetBrains provides a simple way of building such projects using a special Gradle
 
 1. Create a new directory named `sample`:
 
-  ```shell
-  mkdir sample
-   cd sample
-   ```
+    ```shell
+    mkdir sample
+    cd sample
+    ```
 
 2. Create the `settings.gradle.kts` file and modify it as follows:
 
-  ``` kotlin
-  pluginManagement {
-     }
-   ```
-
+    ``` kotlin
+    pluginManagement {
+       repositories {
+           gradlePluginPortal()
+           maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
+       }
+    }
+    ```
+   
 3. Create the `build.gradle.kts` file with the following content:
 
-  ``` kotlin
-  plugins {
-     }
-   ```
+    ``` kotlin
+    plugins {
+       kotlin("jvm") version "1.8.20"
+       id("org.jetbrains.compose") version "1.4.0"
+    }
+    
+    
+    repositories {
+       mavenCentral()
+       maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
+       google()
+    }
+    
+    
+    dependencies {
+       implementation(compose.desktop.currentOs)
+    }
+    
+    
+    compose.desktop {
+       application {
+           mainClass = "MainKt"
+       }
+    }
+    ```
 
 4. Create `src/main/kotlin/main.kt` and add the following code to it:
 
-  ```kotlin
-  import androidx.compose.foundation.layout.Arrangement
-   ```
+    ```kotlin
+    import androidx.compose.foundation.layout.Arrangement
+    import androidx.compose.foundation.layout.Column
+    import androidx.compose.foundation.layout.fillMaxSize
+    import androidx.compose.material.Button
+    import androidx.compose.material.MaterialTheme
+    import androidx.compose.material.Text
+    import androidx.compose.runtime.mutableStateOf
+    import androidx.compose.runtime.remember
+    import androidx.compose.ui.Alignment
+    import androidx.compose.ui.Modifier
+    import androidx.compose.ui.unit.dp
+    import androidx.compose.ui.window.Window
+    import androidx.compose.ui.window.application
+    import androidx.compose.ui.window.rememberWindowState
+    
+    
+    fun main() = application {
+       Window(
+           onCloseRequest = ::exitApplication,
+           title = "Compose for Desktop",
+           state = rememberWindowState(width = 300.dp, height = 300.dp)
+       ) {
+           val count = remember { mutableStateOf(0) }
+           MaterialTheme {
+               Column(Modifier.fillMaxSize(), Arrangement.spacedBy(5.dp)) {
+                   Button(modifier = Modifier.align(Alignment.CenterHorizontally),
+                       onClick = {
+                           count.value++
+                       }) {
+                       Text(if (count.value == 0) "Hello World" else "Clicked ${count.value}!")
+                   }
+                   Button(modifier = Modifier.align(Alignment.CenterHorizontally),
+                       onClick = {
+                           count.value = 0
+                       }) {
+                       Text("Reset")
+                   }
+               }
+           }
+       }
+    }
+    ```
 
 ## Run the application
 
