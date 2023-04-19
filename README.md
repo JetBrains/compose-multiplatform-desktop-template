@@ -3,29 +3,29 @@
 # [Compose Multiplatform](https://github.com/JetBrains/compose-multiplatform) desktop application
 
 > **Note**
-> If you face any issues, please report them on [GitHub](https://github.com/JetBrains/compose-multiplatform/issues).
+> If you have any issues, please report them on [GitHub](https://github.com/JetBrains/compose-multiplatform/issues).
 
-Compose for Desktop can produce applications for macOS, Linux, and Windows platforms.
+Compose for Desktop can produce applications for macOS, Linux, and Windows.
 You can use any of these platforms with our template.
 
 Follow our tutorial below to create a simple desktop application using the Compose Multiplatform UI framework.
 
-If you want to create an application targeting mobile platforms – iOS and Android, use the [Compose Multiplatform mobile application](https://github.com/JetBrains/compose-multiplatform-ios-android-template#readme) template.
+If you want to create an application targeting mobile platforms – iOS and Android – use the [Compose Multiplatform mobile application](https://github.com/JetBrains/compose-multiplatform-ios-android-template#readme) template.
 
 ## Before you start
 
 Install the following tools:
 
 * JDK 11 or later
-* IntelliJ IDEA Community or Ultimate Edition 2020.3 or later (other editors could also work, but we're using IntelliJ IDEA in this tutorial)
-* [Compose Multiplatform IDE support plugin](https://plugins.jetbrains.com/plugin/16541-compose-multiplatform-ide-support)
+* IntelliJ IDEA Community Edition or IntelliJ IDEA Ultimate 2020.3 or later (other editors may also work, but we'll use IntelliJ IDEA in this tutorial)
+* The [Compose Multiplatform IDE support plugin](https://plugins.jetbrains.com/plugin/16541-compose-multiplatform-ide-support)
 
-  It helps to simplify compose development by adding support for the `@Preview` annotation on argument-less `@Composable` functions.
-  The plugin shows how a particular composable function looks directly in the IDE.
+Compose development can be simplified by adding support for the `@Preview` annotation on argument-less `@Composable` functions.
+The plugin shows how a particular composable function looks in the IDE.
 
-## Creating a new project with IDE
+## Creating a new project with an IDE
 
-Starting with 2020.3, IntelliJ IDEA comes with the new project wizard that can automatically create a Compose application.
+Starting with 2020.3, IntelliJ IDEA comes with a new project wizard that can automatically create a Compose application.
 
 > **Note**
 > When creating a project, select JDK 11 or later. To use the native distribution packaging, select JDK 15 or later.
@@ -36,10 +36,10 @@ Starting with 2020.3, IntelliJ IDEA comes with the new project wizard that can a
 
 ### Update the plugin
 
-Before you start, ensure that you use the latest version of the Compose Multiplatform IDE support plugin:
+Before you start, ensure that you’re using the latest version of the Compose Multiplatform IDE support plugin:
 
 1. Check the latest release version in the [Compose Multiplatform GitHub repository](https://github.com/JetBrains/compose-multiplatform/releases) or on the [Kotlin](https://kotlinlang.org/) website.
-2. Open the `build.gradle.kts` file of your project and update the version:
+2. Open the `build.gradle.kts` file for your project and update the version:
 
     ```kotlin
     plugins {
@@ -47,17 +47,17 @@ Before you start, ensure that you use the latest version of the Compose Multipla
        id("org.jetbrains.compose") version "1.4.0"
     }
     ```
-   
-## Creating a new Compose project without IDE
+
+## Creating a new Compose project without an IDE
 
 It is also possible to create a Compose project manually in the terminal.
 
-We recommended building Compose for Desktop projects with Gradle.
+We recommend building Compose for Desktop projects with Gradle.
 JetBrains provides a simple way of building such projects using a special Gradle plugin.
 
 > **Note**
-> You can clone the existing template for a [desktop](https://github.com/JetBrains/compose-multiplatform/tree/master/templates/desktop-template) or
-[multiplatform](https://github.com/JetBrains/compose-multiplatform/tree/master/templates/multiplatform-template) application or create it from scratch.
+> You can clone the existing template for a [desktop](https://github.com/JetBrains/compose-multiplatform-desktop-template/) or
+[multiplatform](https://github.com/JetBrains/compose-multiplatform-template/) application, or create one from scratch.
 
 1. Create a new directory named `sample`:
 
@@ -66,7 +66,7 @@ JetBrains provides a simple way of building such projects using a special Gradle
     cd sample
     ```
 
-2. Create the `settings.gradle.kts` file and update it as follows:
+2. Create the `settings.gradle.kts` file and modify it as follows:
 
     ``` kotlin
     pluginManagement {
@@ -155,22 +155,22 @@ JetBrains provides a simple way of building such projects using a special Gradle
 
 ### In the editor
 
-You can run and debug the application by clicking **Run** in the gutter near the  `main()` function declaration:
+You can run and debug the application by clicking **Run** in the gutter near the `main()` function declaration:
 
 <img alt="Application running" src="readme_images/app-run.png" height="500" />
 
 ### Using Gradle tasks
 
-1. In IntelliJ IDEA, open `build.gradle.kts`. When the necessary dependencies from the Maven repositories are downloaded, your project is ready.
+1. In IntelliJ IDEA, open `build.gradle.kts`. After the necessary dependencies from the Maven repositories are downloaded, your project will be ready.
 2. In the [Gradle tool window](https://www.jetbrains.com/help/idea/jetgradle-tool-window.html), select `sample/Tasks/compose desktop/run`:
 
-   <img alt="New project" src="readme_images/open.png" height="500" />
+<img alt="New project" src="readme_images/open.png" height="500" />
 
-   The first run may take some time.
+The first run may take some time.
 
-3. Click the button several times and see that the application reacts and updates the UI:
+3. Click the button several times to see that the application reacts and updates the UI:
 
-   <img alt="Application running" src="readme_images/app.gif" height="500" />
+<img alt="Application running" src="readme_images/app.gif" height="500" />
 
 You can also run Gradle tasks in the terminal:
 
@@ -181,7 +181,7 @@ You can also run Gradle tasks in the terminal:
 
 We encourage you to explore Compose Multiplatform further and try out more projects:
 
-* [Learn about other cases where you can use the Compose Multiplatform UI framework](https://github.com/JetBrains/compose-multiplatform#readme)
+* [Learn about other cases for using the Compose Multiplatform UI framework](https://github.com/JetBrains/compose-multiplatform#readme)
 * [Create an application targeting iOS and Android with Compose Multiplatform](https://github.com/JetBrains/compose-multiplatform-ios-android-template#readme)
 * [Complete more Compose Multiplatform tutorials](https://github.com/JetBrains/compose-multiplatform/blob/master/tutorials/README.md)
-* [Explore some more advanced Compose Multiplatform example projects](https://github.com/JetBrains/compose-multiplatform/blob/master/examples/README.md)
+* [Explore more advanced Compose Multiplatform example projects](https://github.com/JetBrains/compose-multiplatform/blob/master/examples/README.md)
