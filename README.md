@@ -54,8 +54,8 @@ We recommend building Compose for Desktop projects with Gradle.
 JetBrains provides a simple way of building such projects using a special Gradle plugin.
 
 > **Note**
-> You can clone the existing template for a [desktop](https://github.com/JetBrains/compose-multiplatform/tree/master/templates/desktop-template) or
-[multiplatform](https://github.com/JetBrains/compose-multiplatform/tree/master/templates/multiplatform-template) application, or create one from scratch.
+> You can clone the existing template for a [desktop](https://github.com/JetBrains/compose-multiplatform-desktop-template/) or
+[multiplatform](https://github.com/JetBrains/compose-multiplatform-template/) application, or create one from scratch.
 
 1. Create a new directory named `sample`:
 
