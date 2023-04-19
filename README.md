@@ -46,7 +46,7 @@ Before you start, ensure that you’re using the latest version of the Compose M
        kotlin("jvm") version "1.8.20"
        id("org.jetbrains.compose") version "1.4.0"
     }
-   ```
+    ```
 
 ## Creating a new Compose project without an IDE
 
