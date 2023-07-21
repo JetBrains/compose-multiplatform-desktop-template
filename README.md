@@ -25,7 +25,8 @@ The plugin shows how a particular composable function looks in the IDE.
 
 ## Creating a new project with an IDE
 
-Starting with 2020.3, IntelliJ IDEA comes with a new project wizard that can automatically create a Compose application.
+Starting with 2020.3, IntelliJ IDEA comes with a new project wizard that can automatically create a Compose for Desktop
+project.
 
 > **Note**
 > When creating a project, select JDK 11 or later. To use the native distribution packaging, select JDK 15 or later.
