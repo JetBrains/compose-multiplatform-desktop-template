@@ -45,7 +45,7 @@ Before you start, ensure that you’re using the latest version of the Compose M
     ```kotlin
     plugins {
        kotlin("jvm") version "1.9.0"
-       id("org.jetbrains.compose") version "1.4.3"
+       id("org.jetbrains.compose") version "1.5.0"
     }
     ```
 
@@ -83,7 +83,7 @@ JetBrains provides a simple way of building such projects using a special Gradle
     ``` kotlin
     plugins {
        kotlin("jvm") version "1.9.0"
-       id("org.jetbrains.compose") version "1.4.3"
+       id("org.jetbrains.compose") version "1.5.0"
     }
     
     
