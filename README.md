@@ -82,8 +82,8 @@ JetBrains provides a simple way of building such projects using a special Gradle
 
     ``` kotlin
     plugins {
-       kotlin("jvm") version "1.9.0"
-       id("org.jetbrains.compose") version "1.5.0"
+       kotlin("jvm") version "1.9.20"
+       id("org.jetbrains.compose") version "1.5.10"
     }
     
     
