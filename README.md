@@ -16,7 +16,7 @@ If you want to create an application targeting mobile platforms – iOS and Andr
 
 Install the following tools:
 
-* JDK 11 or later
+* JDK 17 or later
 * IntelliJ IDEA Community Edition or IntelliJ IDEA Ultimate 2020.3 or later (other editors may also work, but we'll use IntelliJ IDEA in this tutorial)
 * The [Compose Multiplatform IDE support plugin](https://plugins.jetbrains.com/plugin/16541-compose-multiplatform-ide-support)
 
@@ -44,8 +44,8 @@ Before you start, ensure that you’re using the latest version of the Compose M
 
     ```kotlin
     plugins {
-       kotlin("jvm") version "2.0.20"
-       id("org.jetbrains.compose") version "1.7.1"
+       kotlin("jvm") version "2.1.21"
+       id("org.jetbrains.compose") version "1.8.2"
     }
     ```
 
@@ -82,8 +82,8 @@ JetBrains provides a simple way of building such projects using a special Gradle
 
     ``` kotlin
     plugins {
-       kotlin("jvm") version "2.0.20"
-       id("org.jetbrains.compose") version "1.7.1"
+       kotlin("jvm") version "2.1.21"
+       id("org.jetbrains.compose") version "1.8.2"
     }
     
     
