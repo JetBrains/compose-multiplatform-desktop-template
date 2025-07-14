@@ -1,9 +1,10 @@
+> [!WARNING]
+> This template is obsolete.
+> Please use the wizard at [kmp.jetbrains.com](https://kmp.jetbrains.com/) or in the [Kotlin Multiplatform](https://plugins.jetbrains.com/plugin/14936-kotlin-multiplatform) plugin to create a new project.
+
 [![official project](http://jb.gg/badges/official.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 # [Compose Multiplatform](https://github.com/JetBrains/compose-multiplatform) desktop application
-
-> **Note**
-> If you have any issues, please report them on [GitHub](https://github.com/JetBrains/compose-multiplatform/issues).
 
 Compose for Desktop can produce applications for macOS, Linux, and Windows.
 You can use any of these platforms with our template.
